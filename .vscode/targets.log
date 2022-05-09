@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May  9 21:47:39 2022
+# Make data base, printed on Tue May 10 00:59:32 2022
 
 # Variables
 
@@ -78,6 +78,8 @@ VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 HOME = /home/vladislav
 # environment
 LESSCLOSE = /usr/bin/lesspipe %s %s
+# makefile (from 'Makefile', line 3)
+DB_FILES_TO_COMP = $(DB_LIB_PATH)db_create_mod.h $(DB_LIB_PATH)db_create_mod.cpp $(DB_LIB_PATH)sqlite3.h $(DB_LIB_PATH)sqlite3.o 
 # environment
 LOGNAME = vladislav
 # environment
@@ -151,7 +153,7 @@ VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu
 # variable set hash-table stats:
-# Load=69/1024=7%, Rehash=0, Collisions=4/94=4%
+# Load=70/1024=7%, Rehash=0, Collisions=4/95=4%
 
 # Pattern-specific Variable Values
 
@@ -179,16 +181,16 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-09 21:47:37.5878823
+#  Last modified 2022-05-10 00:59:17.9178823
 #  File has been updated.
 #  Successfully updated.
 
-build: CFiles_OBG
+build:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 8):
-	g++ -g sqlite3.h db_create_mod.cpp mainpr.cpp  sqlite3.o -lpthread -ldl 
+	g++ telegram_bot.cpp -o telegram_bot --std=c++14 -I/usr/local/include -lTgBot -lboost_system -lssl -lcrypto -lpthread -lcurl
 	
 
 # Not a target:
@@ -201,11 +203,11 @@ CFiles_OBG:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
-#  recipe to execute (from 'Makefile', line 4):
+#  recipe to execute (from 'Makefile', line 5):
 	gcc -c $(DB_LIB_PATH)sqlite3.c  -o $(DB_LIB_PATH)sqlite3.o 
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/16=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
@@ -215,9 +217,9 @@ CFiles_OBG:
 # strcache buffers: 1 (0) / strings = 14 / storage = 117 B / avg = 8 B
 # current buf: size = 8162 B / used = 117 B / count = 14 / avg = 8 B
 
-# strcache performance: lookups = 21 / hit rate = 33%
+# strcache performance: lookups = 20 / hit rate = 30%
 # hash-table stats:
-# Load=14/8192=0%, Rehash=0, Collisions=1/21=5%
-# Finished Make data base on Mon May  9 21:47:39 2022
+# Load=14/8192=0%, Rehash=0, Collisions=1/20=5%
+# Finished Make data base on Tue May 10 00:59:32 2022
 
  

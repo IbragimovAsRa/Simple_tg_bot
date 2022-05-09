@@ -11,7 +11,7 @@
 using  namespace TgBot;
 using  namespace std;
 
-vector<string>bot_commands = {"start", "time", "currency"};
+vector<string>bot_commands = {"start", "time", "currency","add"};
 
 string get_time_as_str(){ // функция для получения текущего времени
     time_t now = time(NULL);
@@ -74,6 +74,9 @@ int main() {
 
     keyboard->inlineKeyboard.push_back(buttons);
 
+
+
+
 // установка команд бота (его действия при нажатии на кнопку)
 
     bot.getEvents().onCommand("start", [&bot](Message::Ptr message) {
@@ -97,6 +100,12 @@ int main() {
 
         for (const auto& command : bot_commands){
             if ("/" + command == message->text){
+               /* switch (command)
+                case "add":{
+
+                    break;
+                }*/
+
                 return;
             }
         }
