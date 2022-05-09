@@ -1,0 +1,5 @@
+make --dry-run --keep-going --print-directory
+make: Entering directory '/home/vladislav/proekt'
+gcc -c db_module/ sqlite3.c  -o db_module/ sqlite3.o 
+make: Leaving directory '/home/vladislav/proekt'
+ 
