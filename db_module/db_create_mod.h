@@ -6,14 +6,10 @@
 #include <cstdlib>
 
 using namespace std;
-class Data{
-    public:
-        int id;
-        double trans;
-        string date[15];
-        string inform[20];
-        int col_num = 4;
-};
+//-sqlite3_open(<путь до бд>,sqlite3* DB) - связь между переменной и бд
+//создает бд, если её нет
+
+
 // создает или просто открывает таблицу. На вход подается
 // бд, имя таблицы, количество колонок и массив названий колонок стринговый
 // названия должны быть как в SQLlite, так что почитай или напиши мне
@@ -28,9 +24,12 @@ int delete_elem(sqlite3* DB, string tabname, string conclusion);
 int clear_tabl(sqlite3* DB, string tabname);
 // удаляет таблицу
 int delete_tabl(sqlite3* DB, string tabname);
-// 
+// выводит сумму элементов таблицы, между месяцами, которые отсчитываются от нынешнего
+// т.е позапрошлый месяц это from_month = 2, а прошлый to_month = 1
+// если to_month = 0, то отсчитываем до сегодняшней даты.
+// у нас должна существовать база данный со столбцом 
 int sum_col_last_mon(sqlite3* DB, string tabname, string colname,int id, int from_month, int to_month);
-
+// закрываем поток или хз зачем, но надо
 void close_db(sqlite3* DB);
 
 #endif
