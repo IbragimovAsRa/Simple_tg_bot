@@ -82,8 +82,8 @@ int main() {
     vector<InlineKeyboardButton::Ptr> buttons2;
     InlineKeyboardButton::Ptr revenue_btn(new InlineKeyboardButton), expenses_btn(new InlineKeyboardButton);
 
-    revenue_btn->text = "revenue";
-    expenses_btn->text = "expenses";
+    revenue_btn->text = "Доход";
+    expenses_btn->text = "Расход";
 
     revenue_btn->callbackData = "revenue";
     expenses_btn->callbackData = "expenses";
@@ -124,13 +124,13 @@ int main() {
     int flag_add = 0;
     int chat_id = 0;
     bot.getEvents().onCallbackQuery([&bot, &keyboard2, &flag_add, &chat_id](CallbackQuery::Ptr query){
+        chat_id = query->message->chat->id;
         if (query->data == "revenue"){
-            bot.getApi().sendMessage(query->message->chat->id, "Введи доход");
+            bot.getApi().sendMessage(query->message->chat->id, "Введи доход в рублях");
             flag_add = 1;
-            chat_id = query->message->chat->id;
         };
         if(query->data == "expenses"){
-            bot.getApi().sendMessage(query->message->chat->id, "Введи расход");
+            bot.getApi().sendMessage(query->message->chat->id, "Введи расход в рублях");
             flag_add = 2;
             }
         });
@@ -148,9 +148,11 @@ int main() {
                 return;
             }
 
-            if (double trans = strtod( message->text.c_str(), NULL) && chat_id && flag_add){
+            if (double trans = strtod( message->text.c_str(), NULL) && chat_id  && flag_add ){
               trans = strtod( message->text.c_str(), NULL);
-               bot.getApi().sendMessage(chat_id, "Внесение в бд");
+              if (flag_add == 2){
+                  trans *=-1;
+              }
                sqlite3* DB;
                string col_names[] {\
                  "id INTEGER ",\
@@ -164,10 +166,11 @@ int main() {
                 to_string(chat_id),\
                 to_string(trans),\
                 "date('now','0 month') ",\
-                "'еда'"};
+                "'inf'"};
                 insert_elem(DB, "data", 4, row_values);
                 close_db(DB);
                 flag_add = 0;
+                bot.getApi().sendMessage(chat_id, "Внесено в базу");
                 return;
             }
         }
