@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Tue May 10 00:59:32 2022
+# Make data base, printed on Sun May 15 18:57:44 2022
 
 # Variables
 
@@ -17,7 +17,7 @@ make: *** No rule to make target 'all'.  Stop.
 # automatic
 ?F = $(notdir $?)
 # environment
-WSLENV = VSCODE_WSL_EXT_LOCATION/up:VSCODE_SERVER_TAR/up
+WSLENV = VSCODE_WSL_EXT_LOCATION/up
 # default
 .SHELLFLAGS := -c
 # environment
@@ -33,9 +33,9 @@ CURDIR := /home/vladislav/proekt
 # makefile
 SHELL = /bin/sh
 # environment
-VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"2b7693ea843d12cbb2e09a3b62281ac8.ru","_translationsConfigFile":"/home/vladislav/.vscode-server/data/clp/2b7693ea843d12cbb2e09a3b62281ac8.ru/tcf.json","_cacheRoot":"/home/vladislav/.vscode-server/data/clp/2b7693ea843d12cbb2e09a3b62281ac8.ru","_resolvedLanguagePackCoreLocation":"/home/vladislav/.vscode-server/data/clp/2b7693ea843d12cbb2e09a3b62281ac8.ru/57fd6d0195bb9b9d1b49f6da5db789060795de47","_corruptedFile":"/home/vladislav/.vscode-server/data/clp/2b7693ea843d12cbb2e09a3b62281ac8.ru/corrupted.info","_languagePackSupport":true}
+VSCODE_NLS_CONFIG = {"locale":"ru","availableLanguages":{"*":"ru"},"_languagePackId":"6c87e287770fa80b3245e0a037b935fb.ru","_translationsConfigFile":"/home/vladislav/.vscode-server/data/clp/6c87e287770fa80b3245e0a037b935fb.ru/tcf.json","_cacheRoot":"/home/vladislav/.vscode-server/data/clp/6c87e287770fa80b3245e0a037b935fb.ru","_resolvedLanguagePackCoreLocation":"/home/vladislav/.vscode-server/data/clp/6c87e287770fa80b3245e0a037b935fb.ru/da15b6fd3ef856477bf6f4fb29ba1b7af717770d","_corruptedFile":"/home/vladislav/.vscode-server/data/clp/6c87e287770fa80b3245e0a037b935fb.ru/corrupted.info","_languagePackSupport":true}
 # environment
-_ = /home/vladislav/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/node
+_ = /home/vladislav/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/node
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # 'override' directive
@@ -51,13 +51,11 @@ VSCODE_CWD = /mnt/c/Users/Vlado/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/vladislav/.vscode-server/bin/57fd6d0195bb9b9d1b49f6da5db789060795de47/bin/remote-cli:/home/vladislav/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2021a/bin:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/Vlado/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Vlado/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Vlado/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Vlado/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Vlado/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/sqlite:/snap/bin
+PATH = /home/vladislav/.vscode-server/bin/da15b6fd3ef856477bf6f4fb29ba1b7af717770d/bin/remote-cli:/home/vladislav/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/WINDOWS/system32:/mnt/c/WINDOWS:/mnt/c/WINDOWS/System32/Wbem:/mnt/c/WINDOWS/System32/WindowsPowerShell/v1.0/:/mnt/c/WINDOWS/System32/OpenSSH/:/mnt/c/Program Files/MATLAB/R2021a/bin:/mnt/c/Program Files/Microsoft SQL Server/120/Tools/Binn/:/mnt/c/Program Files/Git/cmd:/mnt/c/Program Files/CMake/bin:/mnt/c/Users/Vlado/AppData/Local/Programs/Python/Python310/Scripts/:/mnt/c/Users/Vlado/AppData/Local/Programs/Python/Python310/:/mnt/c/Users/Vlado/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Vlado/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/Vlado/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/sqlite:/snap/bin
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-1682e0ff-5026-4a6a-98e0-790c545e5ce2.sock
-# environment
-VSCODE_SERVER_TAR = /mnt/c/Users/Vlado/AppData/Local/Temp/vscode-remote-wsl/57fd6d0195bb9b9d1b49f6da5db789060795de47/vscode-server-stable-linux-x64.tar.gz
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-ea597440-06bd-48ba-95ac-47a839d0bb6f.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -71,7 +69,7 @@ PWD = /home/vladislav/proekt
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/3096_interop
+WSL_INTEROP = /run/WSL/12_interop
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -94,6 +92,8 @@ MAKELEVEL := 0
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
+# makefile (from 'Makefile', line 1)
+BOT_PATH = bot_src/
 # environment
 SHLVL = 0
 # default
@@ -135,7 +135,7 @@ LC_ALL = C
 # environment
 HOSTTYPE = x86_64
 # makefile (from 'Makefile', line 2)
-DB_LIB_PATH = db_module/ 
+DB_LIB_PATH = db_module/
 # automatic
 ^F = $(notdir $^)
 # default
@@ -152,8 +152,10 @@ TERM = xterm-256color
 VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu
+# environment
+MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=70/1024=7%, Rehash=0, Collisions=4/95=4%
+# Load=71/1024=7%, Rehash=0, Collisions=4/96=4%
 
 # Pattern-specific Variable Values
 
@@ -161,9 +163,9 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2064, inode 53350): 7 files, no impossibilities.
+# . (device 2064, inode 53350): 9 files, no impossibilities.
 
-# 7 files, no impossibilities in 1 directories.
+# 9 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -181,16 +183,16 @@ all:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-10 00:59:17.9178823
+#  Last modified 2022-05-15 18:54:04.1735374
 #  File has been updated.
 #  Successfully updated.
 
-build:
+build: CFiles_OBG
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 8):
-	g++ telegram_bot.cpp -o telegram_bot --std=c++14 -I/usr/local/include -lTgBot -lboost_system -lssl -lcrypto -lpthread -lcurl
+	g++ $(DB_FILES_TO_COMP) $(BOT_PATH)telegram_bot.cpp  -o telegram_bot --std=c++14 -I/usr/local/include -lTgBot -lboost_system -lssl -lcrypto -lpthread -lcurl -ldl 
 	
 
 # Not a target:
@@ -207,19 +209,19 @@ CFiles_OBG:
 	gcc -c $(DB_LIB_PATH)sqlite3.c  -o $(DB_LIB_PATH)sqlite3.o 
 
 # files hash-table stats:
-# Load=6/1024=1%, Rehash=0, Collisions=0/16=0%
+# Load=6/1024=1%, Rehash=0, Collisions=0/17=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 14 / storage = 117 B / avg = 8 B
-# current buf: size = 8162 B / used = 117 B / count = 14 / avg = 8 B
+# strcache buffers: 1 (0) / strings = 16 / storage = 142 B / avg = 8 B
+# current buf: size = 8162 B / used = 142 B / count = 16 / avg = 8 B
 
-# strcache performance: lookups = 20 / hit rate = 30%
+# strcache performance: lookups = 23 / hit rate = 30%
 # hash-table stats:
-# Load=14/8192=0%, Rehash=0, Collisions=1/20=5%
-# Finished Make data base on Tue May 10 00:59:32 2022
+# Load=16/8192=0%, Rehash=0, Collisions=1/23=4%
+# Finished Make data base on Sun May 15 18:57:44 2022
 
  

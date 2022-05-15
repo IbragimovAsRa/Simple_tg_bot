@@ -28,7 +28,7 @@ int delete_tabl(sqlite3* DB, string tabname);
 // т.е позапрошлый месяц это from_month = 2, а прошлый to_month = 1
 // если to_month = 0, то отсчитываем до сегодняшней даты.
 // у нас должна существовать база данный со столбцом 
-int sum_col_last_mon(sqlite3* DB, string tabname, string colname,int id, int from_month, int to_month);
+double sum_col_last_mon(sqlite3* DB, string tabname, string colname,int id, int from_month, int to_month);
 // закрываем поток или хз зачем, но надо
 void close_db(sqlite3* DB);
 
